@@ -3,6 +3,7 @@ namespace tabuleiro{
 
         Branca,
         Preta,
+        Amarela,
 
     }
 }
