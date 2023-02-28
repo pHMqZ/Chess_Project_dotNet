@@ -1,0 +1,60 @@
+using System;
+using tabuleiro;
+using xadrez;
+
+namespace xadrez_console
+{
+    class Tela
+    {
+
+        private const int LINHAS_TABULEIRO = 8;
+        private const int COLUNAS_TABULEIRO = 8;
+
+        public static void imprimirTabuleiro(Tabuleiro tab)
+        {
+            for (int i = 0; i < LINHAS_TABULEIRO; i++)
+            {
+                Console.Write(COLUNAS_TABULEIRO - i + " ");
+                for (int j = 0; j < COLUNAS_TABULEIRO; j++)
+                {
+                    if (tab.peca(i, j) == null)
+                    {
+                        Console.Write("- ");
+                    }
+                    else
+                    {
+                       imprimirPeca(tab.peca(i, j)); 
+                       Console.Write(" ");
+                    }
+
+                }
+                    Console.WriteLine();
+            }
+
+            Console.WriteLine("  a b c d e f g h");
+        }
+
+        public static void imprimirPeca(Peca peca)
+        {
+            if (peca.cor == Cor.Branca)
+            {
+                Console.Write(peca);
+            }
+            else
+            {
+                ConsoleColor aux = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(peca);
+                Console.ForegroundColor = aux;
+            }
+        }
+
+        public static PosicaoXadrez lerPosicaoXadrez()
+        {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(coluna, linha);
+        }
+    }
+}
