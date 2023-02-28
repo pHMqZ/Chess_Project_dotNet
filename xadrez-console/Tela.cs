@@ -9,7 +9,7 @@ namespace xadrez_console
 
         private const int LINHAS = 8;
         private const int COLUNAS = 8;
-        private const string COLUNAS_LETRAS ="a b c d e f g h";
+        private const string COLUNAS_LETRAS = "a b c d e f g h";
         private const string VAZIO = "- ";
 
         public static void imprimirTabuleiro(Tabuleiro tab)
@@ -24,26 +24,26 @@ namespace xadrez_console
                 Console.WriteLine();
             }
 
-            Console.WriteLine("  "+COLUNAS_LETRAS);
+            Console.WriteLine("  " + COLUNAS_LETRAS);
         }
 
         public static void imprimirTabuleiro(Tabuleiro tab, bool[,] posicoesPossiveis)
         {
             ConsoleColor fundoOriginal = Console.BackgroundColor;
             ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
-            
+
             for (int i = 0; i < LINHAS; i++)
             {
                 Console.Write(COLUNAS - i + " ");
                 for (int j = 0; j < COLUNAS; j++)
                 {
-                    Console.BackgroundColor = posicoesPossiveis[i,j] ? fundoAlterado : fundoOriginal;
+                    Console.BackgroundColor = posicoesPossiveis[i, j] ? fundoAlterado : fundoOriginal;
                     imprimirPeca(tab.peca(i, j));
                     Console.BackgroundColor = fundoOriginal;
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("  a b c d e f g h");
+            Console.WriteLine("  "+ COLUNAS_LETRAS);
             Console.BackgroundColor = fundoOriginal;
         }
 
@@ -51,7 +51,7 @@ namespace xadrez_console
         {
             if (peca == null)
             {
-                Console.Write("- ");
+                Console.Write(VAZIO);
             }
             else
             {

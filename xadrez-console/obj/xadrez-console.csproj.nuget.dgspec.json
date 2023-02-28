@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\phsilva\\Documents\\Cursos\\dotNet\\Xadrez_console\\xadrez-console\\xadrez-console.csproj": {}
+    "E:\\Programming\\dot_net\\xadrez-console\\xadrez-console\\xadrez-console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phsilva\\Documents\\Cursos\\dotNet\\Xadrez_console\\xadrez-console\\xadrez-console.csproj": {
+    "E:\\Programming\\dot_net\\xadrez-console\\xadrez-console\\xadrez-console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\phsilva\\Documents\\Cursos\\dotNet\\Xadrez_console\\xadrez-console\\xadrez-console.csproj",
+        "projectUniqueName": "E:\\Programming\\dot_net\\xadrez-console\\xadrez-console\\xadrez-console.csproj",
         "projectName": "xadrez-console",
-        "projectPath": "C:\\Users\\phsilva\\Documents\\Cursos\\dotNet\\Xadrez_console\\xadrez-console\\xadrez-console.csproj",
-        "packagesPath": "C:\\Users\\phsilva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phsilva\\Documents\\Cursos\\dotNet\\Xadrez_console\\xadrez-console\\obj\\",
+        "projectPath": "E:\\Programming\\dot_net\\xadrez-console\\xadrez-console\\xadrez-console.csproj",
+        "packagesPath": "C:\\Users\\PHILL\\.nuget\\packages\\",
+        "outputPath": "E:\\Programming\\dot_net\\xadrez-console\\xadrez-console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PHILL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

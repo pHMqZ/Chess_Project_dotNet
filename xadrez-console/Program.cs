@@ -8,11 +8,14 @@ namespace xadrez_console
     {
         static void Main(string[] args)
         {
+
             try
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
+
                 while (!partida.terminada)
                 {
+
                     Console.Clear();
                     Tela.imprimirTabuleiro(partida.tab);
 
@@ -21,7 +24,7 @@ namespace xadrez_console
                     Posicao origem = Tela.lerPosicaoXadrez().toPosition();
 
                     bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
-                    
+
                     Console.Clear();
                     Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
 
@@ -30,14 +33,14 @@ namespace xadrez_console
                     Posicao destino = Tela.lerPosicaoXadrez().toPosition();
 
                     partida.executaMovimento(origem, destino);
-
-
                 }
+
             }
-            catch (TabuleiroException ex)
+            catch (TabuleiroException e)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(e.Message);
             }
+
             Console.ReadLine();
         }
     }
